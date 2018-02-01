@@ -16,13 +16,14 @@
     <body>
       <nav>
         <div class="nav-wrapper">
+          <a class="right hide-on-large-only search-mid-screen modal-trigger" href="#search"><i class="fa fa-search fa-2x"></i></a>
           <a href="#!" class="brand-logo">
-              <img src="imgs/logo.png" class="responsive-img" width="200">
+              <img src="imgs/logo.png" class="responsive-img" width="250">
           </a>
           <a href="#" data-target="mobile-navbar" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="left hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
-            <li><a href="categroies.html">Categroies</a></li>
+            <li><a href="categories.html">categories</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="services.html">Daily Deals</a></li>
@@ -32,11 +33,13 @@
           <ul class="right hide-on-med-and-down">
             <li><a href="cart.html"><i class="fa fa-shopping-cart fa-2x"></i></a></li>
             <li><a href="cart.html"><i class="fa fa-user fa-2x"></i></a></li>
+            <li><a href="#search" class="modal-trigger"><i class="fa fa-search fa-2x"></i></a></li>
             <li><a href="cart.html">Arabic</a></li>
           </ul>
+
           <ul class="sidenav" id="mobile-navbar">
             <li><a href="index.html">Home</a></li>
-            <li><a href="categroies.html">Categroies</a></li>
+            <li><a href="categories.html">categories</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="services.html">Daily Deals</a></li>
@@ -45,8 +48,135 @@
             <li><a href="cart.html">Cart</a></li>
             <li><a href="cart.html">Login</a></li>
             <li><a href="cart.html">Arabic</a></li>
+            <li><a href="#!">First Sidebar Link</a></li>
+              <li><a href="#!">Second Sidebar Link</a></li>
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="#!">First</a></li>
+                        <li><a href="#!">Second</a></li>
+                        <li><a href="#!">Third</a></li>
+                        <li><a href="#!">Fourth</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
           </ul>
         </div>
+        <!-- Modal Structure -->
+        <div id="search" class="modal">
+          <div class="modal-content center-align">
+            <div class="container">
+              <div class="row">
+                <h4>Search</h4>
+                <input type="text" name="search" placeholder="Search..">
+                <input type="submit" value="Search" class="btn btn-float">
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="nav-content hide-on-med-and-down">
+            <ul class="tabs tabs-transparent categories-tabs">
+              <li class="tab">Categories</li>
+              <li class="tab" data-trigger="fashion">
+                <a href="#test2">fashion</a>
+                  <div class="manual_dropdown" data-activate="fashion">
+                   <div class="row">
+                    <div class="col l3 m6 s12">
+                      <h6>Fashion Type1</h6>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                    </div>
+                    <div class="col l3 m6 s12">
+                      <h6>Fashion Type1</h6>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                    </div>
+                    <div class="col l3 m6 s12">
+                      <h6>Fashion Type1</h6>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                    </div>
+                    <div class="col l3 m6 s12">
+                      <h6>Fashion Type1</h6>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="tab" data-trigger="electronic">
+                <a href="#">Electronic</a>
+                  <div class="manual_dropdown" data-activate="electronic">
+                   <div class="row">
+                    <div class="col l3 m6 s12">
+                      <h6>Fashion Type1</h6>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                    </div>
+                    <div class="col l3 m6 s12">
+                      <h6>Fashion Type1</h6>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                    </div>
+                    <div class="col l3 m6 s12">
+                      <h6>Fashion Type1</h6>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                    </div>
+                    <div class="col l3 m6 s12">
+                      <h6>Fashion Type1</h6>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                        <a href="#">Link1</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="tab"><a href="#test2">Test 2</a></li>
+              <li class="tab"><a href="#test2">Test 2</a></li>
+              <li class="tab"><a href="#test4">Test 4</a></li>
+            </ul>
+          </div>
+          <div class="manual_dropdown hidden fashion_dropdown" data-activate="fashion">
+             <div class="row">
+              <div class="col l3 m6 s12">
+                <h6>Fashion Type1</h6>
+                  <a href="#">Link1</a>
+                  <a href="#">Link1</a>
+                  <a href="#">Link1</a>
+              </div>
+              <div class="col l3 m6 s12">
+                <h6>Fashion Type1</h6>
+                  <a href="#">Link1</a>
+                  <a href="#">Link1</a>
+                  <a href="#">Link1</a>
+              </div>
+              <div class="col l3 m6 s12">
+                <h6>Fashion Type1</h6>
+                  <a href="#">Link1</a>
+                  <a href="#">Link1</a>
+                  <a href="#">Link1</a>
+              </div>
+              <div class="col l3 m6 s12">
+                <h6>Fashion Type1</h6>
+                  <a href="#">Link1</a>
+                  <a href="#">Link1</a>
+                  <a href="#">Link1</a>
+              </div>
+            </div>
+          </div>
       </nav>
       <header>
         <div class="row">
@@ -617,7 +747,6 @@
       <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-      <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
       <script type="text/javascript" src="js/custom.js"></script>
     </body>
   </html>

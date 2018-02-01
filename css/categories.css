@@ -261,4 +261,23 @@ footer {
     color: #202020;
     font-weight: bold; }
 
-/*# sourceMappingURL=style.css.map */
+.categories-page {
+  margin: 80px auto; }
+  .categories-page .category {
+    position: relative;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    .categories-page .category .category-name {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%; }
+      .categories-page .category .category-name h6 {
+        color: #fff;
+        font-size: 1.8rem;
+        padding-top: 80px;
+        font-weight: bold; }
+
+/*# sourceMappingURL=categories.css.map */
