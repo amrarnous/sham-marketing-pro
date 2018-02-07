@@ -1,6 +1,9 @@
 section {
   margin: 30px auto; }
 
+.modal {
+  border-radius: 15px; }
+
 .hidden {
   display: none; }
 
@@ -13,6 +16,11 @@ p, span, a, input {
 nav {
   background-color: transparent;
   height: 100px; }
+  nav .brand-logo {
+    left: 0; }
+    @media only screen and (max-width: 992px) {
+      nav .brand-logo {
+        left: 50%; } }
   nav .search-mid-screen {
     height: 56px;
     font-size: 0.7rem;
@@ -78,6 +86,32 @@ nav {
   nav div#search input[type="submit"] {
     background-color: #202020;
     color: #ca9f39; }
+  nav div#login h4 {
+    color: #202020; }
+  nav div#login input[type="text"]:focuse, nav div#login input[type="password"]:focuse {
+    border-bottom: 1px solid #ca9f39;
+    box-shadow: 0 1px 0 0 #ca9f39; }
+  nav div#login input[type="submit"] {
+    background-color: #ca9f39;
+    color: #202020; }
+  nav div#login a.signup {
+    background-color: #202020;
+    color: #ca9f39; }
+  nav div#login p {
+    color: #202020;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 0; }
+  nav div#login .facebook {
+    display: inline-block;
+    padding: 10px; }
+    nav div#login .facebook a {
+      color: #3b5998; }
+  nav div#login .google {
+    display: inline-block;
+    padding: 10px; }
+    nav div#login .google a {
+      color: #dd4b39; }
 
 @media only screen and (min-width: 1001px) {
   header {
@@ -100,6 +134,8 @@ header .category .category-name {
   color: #ca9f39;
   font-family: "Exo+2"; }
 
+.latest-products .section-title h2 {
+  font-weight: bold; }
 .latest-products .card .card-content p {
   color: #ca9f39;
   font-weight: bold; }
@@ -115,7 +151,8 @@ header .category .category-name {
   padding: 20px 0px;
   background-color: #ca9f39; }
   .popular_products .section-title h2 {
-    color: #fff; }
+    color: #fff;
+    text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.2); }
   .popular_products .item {
     margin: 10px auto;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -198,7 +235,8 @@ header .category .category-name {
   border-left: 6px solid #202020;
   border-right: 6px solid #202020;
   color: #fff;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.2); }
 .panel-fashion img {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
@@ -214,7 +252,8 @@ header .category .category-name {
   border-left: 6px solid #202020;
   border-right: 6px solid #202020;
   color: #fff;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.2); }
 .panel-electronic img {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
@@ -237,10 +276,10 @@ footer {
       font-size: 0.9rem; }
       footer .social-media .facebook a:hover {
         color: #202020; }
-    footer .social-media .twitter a {
-      color: #55acee;
+    footer .social-media .youtube a {
+      color: #ff0000;
       font-size: 0.9rem; }
-      footer .social-media .twitter a:hover {
+      footer .social-media .youtube a:hover {
         color: #202020; }
     footer .social-media .linkedin a {
       color: #007bb5;
