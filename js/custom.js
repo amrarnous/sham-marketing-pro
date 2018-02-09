@@ -3,11 +3,19 @@ $(document).ready(function (){
 	  	indicators: true,
 	  	height: 480,
 	  });
-	   $('.modal').modal();
-	$(".fashion-category").on("click",function (){
- 		$(".manual_dropdown").show();
- 	});
-	$(".dropdown-trigger").dropdown();
+	 $('.modal').modal();
+
+	  $('.dropdown-trigger').dropdown({
+	      inDuration: 300,
+	      outDuration: 600,
+	      constrainWidth: false, // Does not change width of dropdown to that of the activator
+	      hover: true, // Activate on hover
+	      gutter: 0, // Spacing from edge
+	      belowOrigin: false, // Displays dropdown below the button
+	      alignment: 'left', // Displays dropdown with edge aligned to the left of button
+	      stopPropagation: false // Stops event propagation
+	    }
+	  );
 
 	$('.sidenav').sidenav();
 
